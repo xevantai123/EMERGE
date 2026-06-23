@@ -22,6 +22,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('0.00').nth(2).fill('10');
   for (let i = 0; i < 30; i++) {
     await page.keyboard.press('PageUp');
+    123
 }
   await page.locator('#saveDocument').click();
 });
