@@ -4,11 +4,9 @@ test('test', async ({ page }) => {
   await page.goto('https://testing_khaimmo2.emerge-test.com/login.html#/');
   await page.getByRole('textbox', { name: 'Email Address or User Name' }).fill('admin');
   const password = page.getByPlaceholder('Credentials');
-
-await password.fill('123123');
-await expect(password).toHaveValue('123123');
-
-await page.getByRole('button', { name: 'Sign in' }).click();
+  await password.fill('123123');
+  await expect(password).toHaveValue('123123');
+  await page.getByRole('button', { name: 'Sign in' }).click();
   await page.getByRole('button', { name: 'OK' }).click();
   await page.locator('a').filter({ hasText: 'Products' }).first().click();
   await page.getByRole('link', { name: 'Products', exact: true }).click();
@@ -23,7 +21,7 @@ await page.getByRole('button', { name: 'Sign in' }).click();
   await page.getByPlaceholder('0.00').nth(2).click();
   await page.getByPlaceholder('0.00').nth(2).fill('10');
   for (let i = 0; i < 30; i++) {
-    await page.keyboard.press('PageUp'); 
+    await page.keyboard.press('PageUp');
 }
   await page.locator('#saveDocument').click();
 });
