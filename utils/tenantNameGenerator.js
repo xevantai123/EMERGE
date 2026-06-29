@@ -25,3 +25,6 @@ function generateBase(ownerName, version) {
 module.exports = {
     generateBase
 };
+//gọi qua config/owners.js để lấy thông tin owner, gọi dateHelper.js để lấy ngày hiện tại, 
+//gọi versionHelper.js để build tên subdomain, trả về object tenant gồm owner, subdomain, email, companyName
+//Gọi qua api.service.js

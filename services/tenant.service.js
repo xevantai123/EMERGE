@@ -28,6 +28,10 @@ async function generate(ownerName) {
 
         // ✅ SUCCESS
         if (response.status === 200) {
+            tenant.password = "123123";
+
+            tenant.url =
+            `https://${tenant.subdomain}.emerge-test.com`;
             return {
                 success: true,
                 tenant,

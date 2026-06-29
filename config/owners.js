@@ -1,13 +1,13 @@
 module.exports = [
     {
         id: 1,
-        displayName: "Jack",
-        prefix: "testjack"
+        displayName: "Henry",
+        prefix: "testhenry"
     },
     {
         id: 2,
-        displayName: "Henry",
-        prefix: "testhenry"
+        displayName: "Jack",
+        prefix: "testjack"
     },
     {
         id: 3,

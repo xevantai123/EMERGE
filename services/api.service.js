@@ -26,3 +26,4 @@ async function createTenant(payload, urlSubdomain) {
 module.exports = {
     createTenant
 };
+//api.service.js sẽ gọi qua playwright (API) để tạo tenant, trả về status và body
