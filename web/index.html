@@ -1,9 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <title>Tenant Generator</title>
+    <style>
+        body {
+            margin:0;
+            padding-top: 150px;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+            text-align:center;
+            background-image: url("2025-04-26_22h26_14.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+            .container {
+    background: rgb(129, 46, 46);
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+button {
+    width: 140px;
+    padding: 8px 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    }
+.button-group {
+    display: flex;
+    gap: 10px;
+    
+}
+label{
+    font-weight:bold;
+}
+select{
+    width:100%;
+    padding:8px;
+    margin-top:8px;
+    margin-bottom:20px;
+}
+    </style>
 </head>
 <body>
+
+    <div class="container">
 
 <h2>Tenant Generator</h2>
 
@@ -15,35 +60,29 @@
     <option value="Gigi">Gigi</option>
 </select>
 
-<br><br>
+
 
 <div id="result"></div>
 
-<br>
 
-<button onclick="copyUrl()">
 
-📋 Copy URL
+<div class="button-group">
 
-</button>
+    <button onclick="generate()">Generate</button>
 
-<br><br>
+    <button onclick="copyUrl()">📋 Copy URL</button>
 
-<button onclick="openTenant()">
+</div>
 
-🌐 Open Tenant
+<div class="button-group">
 
-</button>
+    <button onclick="openTenant()">🌐 Open Tenant</button>
 
-<br><br>
+    <button onclick="autoLogin()">🔐 Auto Login</button>
 
-<button onclick="autoLogin()">
+</div>
 
-🔐 Auto Login
-
-</button>
-
-<button onclick="generate()">Generate</button>
+</div>
 
 <p id="result"></p>
 

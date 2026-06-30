@@ -1,0 +1,87 @@
+{
+    "results": [
+        {
+            "activityEventId": 1848627,
+            "dateEvent": "2026-06-27T00:48:46.85",
+            "recordedEventType": 0,
+            "recordedObjectType": 5,
+            "objectId": 145455,
+            "customMessage": null,
+            "customMessageParams": null,
+            "transalatedToMessageCode": "",
+            "userId": 11,
+            "userName": "vivian",
+            "statusName": null
+        },
+        {
+            "activityEventId": 1848623,
+            "dateEvent": "2026-06-27T00:48:43.89",
+            "recordedEventType": 0,
+            "recordedObjectType": 5,
+            "objectId": 145455,
+            "customMessage": null,
+            "customMessageParams": "Invoice:0:LXH2026024389",
+            "transalatedToMessageCode": "",
+            "userId": 11,
+            "userName": "vivian",
+            "statusName": null
+        },
+        {
+            "activityEventId": 1848622,
+            "dateEvent": "2026-06-27T00:48:38.427",
+            "recordedEventType": 101,
+            "recordedObjectType": 5,
+            "objectId": 145455,
+            "customMessage": null,
+            "customMessageParams": null,
+            "transalatedToMessageCode": "ALM.LABEL.HISTORY_LOG_CONVERT_TO_SHIPMENT",
+            "userId": 11,
+            "userName": "vivian",
+            "statusName": null
+        },
+        {
+            "activityEventId": 1848620,
+            "dateEvent": "2026-06-27T00:48:38.29",
+            "recordedEventType": 0,
+            "recordedObjectType": 5,
+            "objectId": 145455,
+            "customMessage": null,
+            "customMessageParams": "DO:0:DO2026024421",
+            "transalatedToMessageCode": "",
+            "userId": 11,
+            "userName": "vivian",
+            "statusName": null
+        },
+        {
+            "activityEventId": 1848619,
+            "dateEvent": "2026-06-27T00:48:35.187",
+            "recordedEventType": 11,
+            "recordedObjectType": 5,
+            "objectId": 145455,
+            "customMessage": null,
+            "customMessageParams": "{\"SalesOrderStatusId\":4,\"CustomStatusId\":\"\"}",
+            "transalatedToMessageCode": "GENERAL.LABEL.APPROVE",
+            "userId": 11,
+            "userName": "vivian",
+            "statusName": null
+        },
+        {
+            "activityEventId": 1848618,
+            "dateEvent": "2026-06-27T00:48:32.52",
+            "recordedEventType": 1,
+            "recordedObjectType": 5,
+            "objectId": 145455,
+            "customMessage": null,
+            "customMessageParams": null,
+            "transalatedToMessageCode": "GENERAL.LABEL.CREATE_NEW",
+            "userId": 11,
+            "userName": "vivian",
+            "statusName": null
+        }
+    ],
+    "pageSize": 1,
+    "total": 6,
+    "complete": false,
+    "fromDate": "0001-01-01T00:00:00",
+    "toDate": "0001-01-01T00:00:00"
+}
