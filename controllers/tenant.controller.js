@@ -5,7 +5,9 @@ async function generateTenant(req, res) {
 
     const owner = req.body.env;
 
-    const result = await tenantService.generate(owner);
+    const environment = req.body.environment;
+
+    const result = await tenantService.generate(owner, environment);
 
     res.json(result);
 

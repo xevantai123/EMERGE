@@ -1,7 +1,8 @@
 const generator = require("../utils/tenantNameGenerator");
 const apiService = require("./api.service");
+const registerService = require("./register.service");
 
-async function generate(ownerName) {
+async function generate(ownerName, environment) {
 
     let version = 1;
 
@@ -10,6 +11,20 @@ async function generate(ownerName) {
     while (version <= 5) {
 
         const tenant = generator.generateBase(ownerName, version);
+
+        if (environment === "live") {
+
+    await registerService.registerTenant(
+        tenant.companyName,
+        tenant.email
+    );
+
+    return {
+        success: true,
+        tenant,
+        environment
+    };
+}
 
         const response = await apiService.createTenant(
             {

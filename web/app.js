@@ -4,12 +4,19 @@ async function generate() {
 
     const env = document.getElementById("envSelect").value;
 
+    const environment = document.querySelector(
+        'input[name="environment"]:checked'
+    ).value;
+
     const response = await fetch("/generate", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ env })
+        body: JSON.stringify({
+    env,
+    environment
+})
     });
 
     const data = await response.json();
